@@ -73,7 +73,7 @@ plot(intervalavg, type="l", col="red",
      main="daily activity pattern")
 ```
 
-![](Reproducible_Research_PA1_files/figure-latex/unnamed-chunk-4-1.pdf) 
+![plot of figure2](figure/figure2.png) 
 
 ```r
 ## find out the most active 5-mins interval
@@ -106,7 +106,7 @@ newday <- tapply(activity$steps, activity$date, sum)
 hist(newday)
 ```
 
-![](Reproducible_Research_PA1_files/figure-latex/unnamed-chunk-6-1.pdf) 
+![plot of figure3](figure/figure3.png)  
 
 ```r
 mean(newday) - mean
@@ -144,4 +144,4 @@ xyplot(meanSteps$avgSteps ~ meanSteps$interval | meanSteps$weekDays,
        xlab = "Interval", ylab = "Number of steps")
 ```
 
-![](Reproducible_Research_PA1_files/figure-latex/unnamed-chunk-8-1.pdf) 
+![plot of figure4](figure/figure4.png) 
