@@ -34,7 +34,7 @@ dailysteps <- tapply(activity$steps, activity$date, sum, na.rm=TRUE)
 hist(dailysteps)
 ```
 
-![](Reproducible_Research_PA1_files/figure-latex/unnamed-chunk-2-1.pdf) 
+![plot of figure1](figure/figure1.png) 
 
 ```r
 ## calculate the mean and median total number of steps taken per day(NA removed)
